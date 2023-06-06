@@ -3,7 +3,7 @@
 import requests
 from lxml import etree
 import csv
-
+import time
 
 # 代理池
 def getproxy():
@@ -12,6 +12,18 @@ def getproxy():
     proxies = {'http': 'http://' + proxy}
     return proxies
 
+def getNumPage(code):
+    # https://stock.finance.sina.com.cn/stock/go.php/vReport_List/kind/search/index.phtml?symbol=002415&t1=all
+    url = f"https://stock.finance.sina.com.cn/stock/go.php/vReport_List/kind/search/index.phtml?symbol={code}&t1=all"
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.42',
+    }
+    resp = requests.get(url, headers=headers, proxies=getproxy())
+    # print(resp.text)
+    # page_count = 1
+    page_count = etree.HTML(resp.text).xpath('//*[@id="_function_code_page"]/span[10]/a/@onclick')[0].split("'")[1]
+    print(f"研究报告共{page_count}页")
+    return page_count
 
 # 被识别为爬虫会限制五分钟内拒绝访问 # 代理池默认不执行，需要请自行配置
 def reports(code, page):
@@ -24,7 +36,7 @@ def reports(code, page):
     page_html = etree.HTML(resp.text)
     trs = ['https:' + i for i in page_html.xpath('//td[@class="tal f14"]/a/@href')]
     # print(trs)
-    csv_file = open('data//' + f'浦发银行研究报告第{page}页.csv', 'w', newline='', encoding='utf-8')
+    csv_file = open('data//news_data//' + f'浦发银行研究报告第{page}页.csv', 'w', newline='', encoding='utf-8')
     f = csv.writer(csv_file)
     for tr in trs:
         # print(requests.get(tr, headers=headers).text)
@@ -39,8 +51,16 @@ def reports(code, page):
         print([title[0], category[0][3:], institution[0], researcher[0], date[0][3:], ''.join(content).strip()])
     csv_file.close()
 
+def main(code):
+    # 启动爬虫获取获取页数、页面响应
+    page_count = getNumPage(code)
+    print(page_count)
+    # # 爬取内容
+    # for i in range(1, int(page_count)+1):
+    #     reports(code, i)
+    # time.time(2000)
+
 
 if __name__ == '__main__':
     code = '002415'  # 海康威视
-    page = 1  # 爬取第几页
-    reports(code, page)
+    main(code)
