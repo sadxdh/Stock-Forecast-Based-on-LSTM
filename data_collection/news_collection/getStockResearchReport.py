@@ -4,6 +4,7 @@ import requests
 from lxml import etree
 import csv
 import time
+import json
 
 # 代理池
 def getproxy():
@@ -26,7 +27,7 @@ def getNumPage(code):
     return page_count
 
 # 被识别为爬虫会限制五分钟内拒绝访问 # 代理池默认不执行，需要请自行配置
-def reports(code, page):
+def reports(stock,code, page):
     url = f"https://stock.finance.sina.com.cn/stock/go.php/vReport_List/kind/search/index.phtml?symbol={code}&t1=all&p={page}"
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.42',
@@ -36,7 +37,7 @@ def reports(code, page):
     page_html = etree.HTML(resp.text)
     trs = ['https:' + i for i in page_html.xpath('//td[@class="tal f14"]/a/@href')]
     # print(trs)
-    csv_file = open('data//news_data//' + f'浦发银行研究报告第{page}页.csv', 'w', newline='', encoding='utf-8')
+    csv_file = open('data//news_data//' + f'{stock}研究报告第{page}页.csv', 'w', newline='', encoding='utf-8')
     f = csv.writer(csv_file)
     for tr in trs:
         # print(requests.get(tr, headers=headers).text)
@@ -51,16 +52,23 @@ def reports(code, page):
         print([title[0], category[0][3:], institution[0], researcher[0], date[0][3:], ''.join(content).strip()])
     csv_file.close()
 
-def main(code):
-    # 启动爬虫获取获取页数、页面响应
-    page_count = getNumPage(code)
-    print(page_count)
-    # # 爬取内容
-    # for i in range(1, int(page_count)+1):
-    #     reports(code, i)
-    # time.time(2000)
+def main():
+    f = open('target','r',encoding='utf-8')
+    stock_name = f.read().split('\n')
+    print(stock_name)
+    for s in stock_name:
+        stock = s.split('（')[0]
+        code = s.split('.')[-1].split('）')[0]
+        print(stock)
+        print(code)
+        # 启动爬虫获取获取页数、页面响应
+        page_count = getNumPage(code)
+        print(page_count)
+        # # 爬取内容
+        for i in range(1, int(page_count)+1):
+            reports(stock,code, i)
+        time.time(2000)
 
 
 if __name__ == '__main__':
-    code = '002415'  # 海康威视
-    main(code)
+    main()
