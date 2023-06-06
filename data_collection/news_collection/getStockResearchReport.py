@@ -4,7 +4,6 @@ import requests
 from lxml import etree
 import csv
 import time
-import json
 
 # 代理池
 def getproxy():
