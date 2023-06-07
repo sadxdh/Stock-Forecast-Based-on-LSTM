@@ -9,8 +9,8 @@ class PeakDetection:
         self.filename = filename
         self.stock_week = None
         self.stock_train = None
-        self.data = pd.read_csv(f"..\\data\\{self.filename}.csv", index_col=0, parse_dates=[0])
-        # print("已读取到数据", self.data)
+        self.data = pd.read_csv(f"data/stocks_data/{self.filename}.csv", index_col=0, parse_dates=[0])
+        print("已读取到数据", self.data)
         self.vis()
 
     def AMPD(self, data):
@@ -37,9 +37,9 @@ class PeakDetection:
         return np.where(p_data == max_window_length)[0]
 
     def sim_data(self):
-        x = self.data.index[-500:]
-        y = self.data['close'][-500:]
-        print("x:", x)
+        x = self.data.index
+        y = self.data['close']
+        # print("x:", x)
         # print("y:", y)
         return x, y
 
@@ -47,12 +47,21 @@ class PeakDetection:
         x, y = self.sim_data()
         plt.plot(x, y)
         px = x[self.AMPD(y)]
-        print("长度：", len(px), px)
-        plt.scatter(px, y[px], color="red")
+        print("长度：", px)
+        self.data_extreme_value = self.data.copy()
+        self.data_extreme_value['mixumum'] = pd.Series([])
+        self.data_extreme_value['mixumum'] = self.data.index.isin(px)
 
-        plt.show()
+
+        px = x[self.AMPD(-y)]
+        print("长度：", px)
+        self.data_extreme_value = self.data_extreme_value.copy()
+        self.data_extreme_value['minumum'] = pd.Series([])
+        self.data_extreme_value['minumum'] = self.data.index.isin(px)
+
+        self.data_extreme_value.to_csv(f'data/stocks_data/{self.filename}_MaxMin.csv')
 
 
 if __name__ == '__main__':
-    filename = "海康威视2010-05-05"
+    filename = "海康威视"
     P = PeakDetection(filename)

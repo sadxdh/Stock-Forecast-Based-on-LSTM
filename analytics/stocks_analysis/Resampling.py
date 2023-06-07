@@ -1,13 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+# 按周采样，计算单位时间内close上升或下降的幅度
 class Resampling:
     def __init__(self, filename):
         self.filename = filename
         self.stock_week = None
         self.stock_train = None
-        self.data = pd.read_csv(f"data\\{self.filename}.csv", index_col=0, parse_dates=[0])
+        self.data = pd.read_csv(f"data\stocks_data\{self.filename}.csv", index_col=0, parse_dates=[0])
         print("已读取到数据", self.data)
         self.resamplingWeek()
         self.draw()
@@ -30,7 +30,8 @@ class Resampling:
 
 
 if __name__ == '__main__':
-    filename = "海康威视2010-05-05"
+    filename = "海康威视"
     data = Resampling(filename)
     stock_train = data.stock_train
     stock_test = data.stock_test
+
