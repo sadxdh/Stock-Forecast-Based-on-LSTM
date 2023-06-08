@@ -14,8 +14,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(980, 682)
-        MainWindow.setMaximumSize(QtCore.QSize(16777215, 800))
+        # 固定整个窗口的大小
+        MainWindow.setFixedSize(980, 682)
+        # MainWindow.setMaximumSize(QtCore.QSize(16777215, 800))
         MainWindow.setStyleSheet("QMainWindow{\n"
 "    background-image:url(./image/bg12.jpg)\n"
 "}")
@@ -34,7 +35,9 @@ class Ui_MainWindow(object):
         self.left = QtWidgets.QFrame(self.centralwidget)
         self.left.setMaximumSize(QtCore.QSize(300, 16777215))
         self.left.setStyleSheet("QFrame{\n"
-"border: 2px solid white;\n"
+        "border: 2px solid white;\n"
+                
+# "    color:rgb(255, 255, 255);\n"
 "}")
         self.left.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.left.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -195,4 +198,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)                  # 执行类中的setupUi方法，方法的参数是第二步中创建的QMainWindow
     MainWindow.show()                       # 执行QMainWindow的show()方法，显示这个QMainWindow
     sys.exit(app.exec_())                   # 使用exit()或者点击关闭按钮退出QApplicat
-
