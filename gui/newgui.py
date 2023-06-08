@@ -48,7 +48,7 @@ class Ui_MainWindow(object):
         self.label_4 = QtWidgets.QLabel(self.left)
         self.label_4.setGeometry(QtCore.QRect(140, 240, 101, 31))
         self.label_4.setStyleSheet("QLabel{\n"
-"    border:none\n"
+"    border:none\n;"
 "    color:rgb(255, 255, 255);\n"
 "}\n"
 "")
