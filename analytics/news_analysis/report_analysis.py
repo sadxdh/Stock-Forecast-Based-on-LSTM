@@ -7,8 +7,8 @@ import jieba
 import thulac
 from concurrent.futures import ProcessPoolExecutor
 
-stockname = '华工科技'
-path = 'data/news_data/' # 右侧要有‘/’
+stockname = '上海临港'
+path = 'data/news_data/'  # 右侧要有‘/’
 
 def readCSV(file):
     report_df = pd.read_csv(os.path.join(path, file), names=['title', 'institution_type', 'institution_name', 'author', 'date', 'content'])
@@ -33,7 +33,6 @@ def coarseWords(report_df):
         cleaned_text = ' '.join(filtered_tokens)
         # print(cleaned_text)
         return cleaned_text
-
     report_df['coarseWords'] = report_df['content'].apply(func)
     return report_df
 
@@ -43,6 +42,7 @@ def thinWords(report_df):
         df = pd.DataFrame(thu1.cut(x), columns=['word', 'counts'])
         word_count = df[df['counts'] == 'v'].groupby('word').count()
         word_count_list = word_count.to_records().tolist()
+        # print(word_count_list)
         return word_count_list
     report_df['thinWords'] = report_df['coarseWords'].apply(func)
     return report_df
@@ -51,7 +51,7 @@ def keyWords(report_df):
     def func(x):
         import jieba.analyse
         keywords = jieba.analyse.extract_tags(x, topK=10, withWeight=True)
-        # print(keywords)
+        print(keywords)
         return keywords
     report_df['keyWords'] = report_df['content'].apply(func)
     return report_df
@@ -79,10 +79,6 @@ def affectiveClassification(report_df):
     report_df['affectiveClassification'] = report_df['content'].apply(func)
     return report_df
 
-def save_total(report_df):
-    report_df.to_csv(f'{path}/{stockname}_report_total.csv', encoding="utf_8_sig")
-    print(report_df)
-
 def multi_process():
     files = [file for file in os.listdir(path) if re.match(rf'{stockname}研究报告.*\.csv', file)]
     print(files)
@@ -96,10 +92,15 @@ def report_auto_process(file):
     report_df = thinWords(report_df)
     report_df = keyWords(report_df)
     report_df = affectiveClassification(report_df)
+    print(report_df.columns)
     # file = ‘海康威视研究报告第1页.csv’ 保存文件名为：海康威视研究报告第1页_processed.csv
     savefilename = path + file.split('.')[0]+'_processed.'+file.split('.')[1]
     print(savefilename)
     report_df.to_csv(savefilename, encoding="utf_8_sig")
+
+def save_total(report_df):
+    report_df.to_csv(f'{path}/{stockname}_report_total.csv', encoding="utf_8_sig")
+    print(report_df)
 
 def concatCSV():
     report_df = pd.DataFrame()
@@ -116,3 +117,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # import nltk
+    # nltk.download('vader_lexicon')
+    # nltk.download('stopwords')
+    # nltk.download('punkt')
