@@ -17,6 +17,29 @@ def main(filename):
     # df = df.tail(100)
     df['涨幅'] = (df['close'] - df['close'].shift(5)) / df['close'].shift(5)
     df['跌幅'] = (df['close'].shift(5) - df['close']) / df['close'].shift(5)
+
+    # 假设您已经有了一个名为df的DataFrame对象，其中包含日期（在df.index中）和收盘价（在df['close']中）
+    # 相对强弱指标RSI基本原理： 
+    # 通过测量一段时间间内股价上涨总幅度占股价变化总幅度平均值的百分比来评估多空力量的强弱程度， 其能够反映出市场在一定时期内的景气程度
+    df['RSI'] = ta.RSI(df['close'], timeperiod=14)
+
+    # 计算MACD指标
+    # MACD线、信号线（signal line,MACD线的9日指数移动均线）、离差图（divergence histogram）
+    # macd（对应diff）
+    # macdsignal（对应dea）
+    # macdhist（对应macd）
+    # 然后按照下面的原则判断买入还是卖出。       
+    # 1.DIFF、DEA均为正，DIFF向上突破DEA，买入信号。       
+    # 2.DIFF、DEA均为负，DIFF向下跌破DEA，卖出信号。       
+    # 3.DEA线与K线发生背离，行情反转信号。       
+    # 4.分析MACD柱状线，由正变负，卖出信号；由负变正，买入信号。
+    # 链接：https://juejin.cn/post/6914195121487478791
+    macd, macdsignal, macdhist = ta.MACD(df['close'], fastperiod=12, slowperiod=26, signalperiod=9)
+    df['MACD'] = macd
+    df['MACD_Signal'] = macdsignal
+    df['MACD_Histogram'] = macdhist
+
+    # 保存到文件
     clean_filename = f'{filename}_clean'
     filename = f'data/stocks_data/{clean_filename}.csv'
     df.to_csv(filename)
