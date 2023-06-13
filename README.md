@@ -28,11 +28,6 @@ Python基础，python分析（pandas，numpy），可视化（matplotlib），�
 
 1. **news_data**：新闻数据（txt文件，首行：标题、时间、来源/作者）
    1. **研究报告**--[研究报告|研究评级|机构研报_新浪财经_新浪网 (sina.com.cn)](https://stock.finance.sina.com.cn/stock/go.php/vReport_List/kind/search/index.phtml?symbol=002415&t1=all)
-   2. **大市评论**--[股市及时雨_证券_财经_新浪网 (sina.com.cn)](https://roll.finance.sina.com.cn/finance/zq1/gsjsy/index.shtml)
-   3. **个股点评**--[个股点评_证券_新浪财经 (sina.com.cn)](http://finance.sina.com.cn/roll/index.d.html?cid=56588)
-   4. **证券报**--[四大证券报精华_财经_新浪网 (sina.com.cn)](https://finance.sina.com.cn/focus/zqbjh/)
-   5. **行业对比**--[行情中心_新浪财经_新浪网 (sina.com.cn)](https://vip.stock.finance.sina.com.cn/mkt/)
-      1. 同板块股票各时期走势（可以调用股票分析模块（analytics））
 2. **stocks_data**：股票数据
    1. 要求：
       1. csv文件，英文逗号分隔符，带表头
