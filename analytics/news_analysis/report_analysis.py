@@ -128,7 +128,6 @@ def multi_process():
     with ProcessPoolExecutor() as pool:
         pool.map(report_auto_process, files)
 
-
 # cpu密集型，使用多进程加速
 def report_auto_process(file):
     report_df = readCSV(file)
@@ -136,17 +135,14 @@ def report_auto_process(file):
     report_df = thinWords(report_df)
     report_df = keyWords(report_df)
     report_df = affectiveClassification(report_df)
-    # print(report_df.columns)
     # file = ‘海康威视研究报告第1页.csv’ 保存文件名为：海康威视研究报告第1页_processed.csv
     savefilename = path + file.split('.')[0]+'_processed.'+file.split('.')[1]
     print(savefilename)
     report_df.to_csv(savefilename, encoding="utf_8_sig")
 
-
 def save_total(report_df):
     report_df.to_csv(f'{path}/{stockname}_report_total.csv', encoding="utf_8_sig")
     print(report_df)
-
 
 def concatCSV():
     report_df = pd.DataFrame()
@@ -160,10 +156,9 @@ def concatCSV():
     save_total(report_df)
     return report_df
 
-
 def main():
     multi_process()
-    concatCSV()
+    # concatCSV()
 
 
 if __name__ == '__main__':
