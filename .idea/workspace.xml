@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71cf0c7d-b56a-4989-8c5f-75650388d5c3" name="变更" comment="数据处理更新">
-      <change beforePath="$PROJECT_DIR$/model_train/LSTM模型构建.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_train/LSTM模型构建.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_train/LSTM预测股票模型.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_train/linear.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_train/浦发银行_clean_MaxMin.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_train/研究报告模型.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_train/研究报告模型.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_collection/stocks_collection/getJson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/UI运行脚本.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/stocks_analysis/data_clearn.py" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/stocks_analysis/data_clearn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/model_train" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
@@ -46,7 +46,73 @@
       <recent name="D:\2023-june-practical-training\model_train" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.getJson">
+    <configuration name="UI运行脚本" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/UI运行脚本.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getJson" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_collection/stocks_collection/getJson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="newgui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/newgui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="report_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="2023-june-practical-training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,6 +159,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.getJson" />
+        <item itemvalue="Python.UI运行脚本" />
+        <item itemvalue="Python.newgui" />
         <item itemvalue="Python.report_analysis" />
       </list>
     </recent_temporary>
@@ -109,6 +178,10 @@
       <workItem from="1686706901334" duration="5561000" />
       <workItem from="1686790682139" duration="2000" />
       <workItem from="1686818096125" duration="3000" />
+      <workItem from="1686820719525" duration="3000" />
+      <workItem from="1686876275563" duration="962000" />
+      <workItem from="1686878176670" duration="981000" />
+      <workItem from="1686879644167" duration="3195000" />
     </task>
     <task id="LOCAL-00001" summary="数据处理更新">
       <created>1686712522442</created>
@@ -140,6 +213,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="数据处理更新" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/newgui_py$getJson.coverage" NAME="getJson 覆盖结果" MODIFIED="1686885281075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/newgui_py$UI.coverage" NAME="UI运行脚本 覆盖结果" MODIFIED="1686879481628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/newgui_py$newgui.coverage" NAME="newgui 覆盖结果" MODIFIED="1686877500655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2023_june_practical_training$report_analysis.coverage" NAME="report_analysis 覆盖结果" MODIFIED="1686707221438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2023_june_practical_training$content.coverage" NAME="先读取合并content 覆盖结果" MODIFIED="1686710407004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

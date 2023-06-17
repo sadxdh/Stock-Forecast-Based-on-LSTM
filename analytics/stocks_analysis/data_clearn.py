@@ -70,7 +70,7 @@ def main(filename):
     # 2.DIFF、DEA均为负，DIFF向下跌破DEA，卖出信号。       
     # 3.DEA线与K线发生背离，行情反转信号。       
     # 4.分析MACD柱状线，由正变负，卖出信号；由负变正，买入信号。
-    # 链接：https://juejin.cn/post/6914195121487478791
+    # 参考链接：https://juejin.cn/post/6914195121487478791
     macd, macdsignal, macdhist = ta.MACD(df['close'], fastperiod=12, slowperiod=26, signalperiod=9)
     df['MACD'] = macd
     df['MACD_Signal'] = macdsignal
