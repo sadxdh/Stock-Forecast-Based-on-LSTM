@@ -12,6 +12,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 class Ui_Form(object):
+    def __init__(self, stock_name):
+        self.stock_name = stock_name
+
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1150, 755)
@@ -22,11 +25,11 @@ class Ui_Form(object):
         Form.setSizePolicy(sizePolicy)
         Form.setMinimumSize(QtCore.QSize(1150, 755))
         Form.setMaximumSize(QtCore.QSize(1150, 755))
-        Form.setStyleSheet("QWidget{background:url(image/bg222.png)}")
+        Form.setStyleSheet("QWidget{background:url(GUI/image/bg222.png)}")
         self.frame_5 = QtWidgets.QFrame(Form)
         self.frame_5.setGeometry(QtCore.QRect(10, 10, 1131, 41))
         self.frame_5.setStyleSheet("background-image:url(:/background/bg12.jpg);\n"
-"border: 2px solid white;")
+                                    "border: 2px solid white;")
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
@@ -36,9 +39,9 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.frame_4 = QtWidgets.QFrame(Form)
         self.frame_4.setGeometry(QtCore.QRect(10, 60, 1131, 681))
-        self.frame_4.setStyleSheet("image: url(image/-1000收盘价预测.png);\n"
-"background-size: cover;\n"
-"border: 2px solid white;")
+        self.frame_4.setStyleSheet(f"image: url(Visualization/模型预测图表/{self.stock_name}预测.png);\n"
+                                    "background-size: cover;\n"
+                                    "border: 2px solid white;")
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
@@ -49,15 +52,14 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">海康威视股票预测走势图</span></p></body></html>"))
-# import ui2_rc
+        self.label.setText(_translate("Form", f"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">{self.stock_name}股票预测走势图</span></p></body></html>"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form('-1000收盘价')
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

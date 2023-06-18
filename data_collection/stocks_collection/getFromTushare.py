@@ -3,7 +3,7 @@ import tushare as ts
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+picpath = 'Visualization/股票数据可视化图表'
 class GetData:
     def __init__(self, code, start_time, jiaoyisuo, stock_name):
         self.code = code
@@ -17,7 +17,7 @@ class GetData:
             print("正在初始化数据。。")
             self.save()
         else:
-            print("已获取到本地数据")
+            print("本地已存在")
             self.ori_data = pd.read_csv(f"data\\stocks_data\\{self.stocks_name}.csv")
             print("数据正在读取", self.ori_data)
         self.draw()
@@ -32,6 +32,7 @@ class GetData:
     def draw(self):
         self.ori_data['close'].plot()
         plt.title("original data")
+        plt.savefig(f'{picpath}/{self.stocks_name}.png')
         plt.show()
 
     def delData(self):

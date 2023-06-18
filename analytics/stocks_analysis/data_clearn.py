@@ -1,6 +1,7 @@
 import pandas as pd
 import talib as ta
-from PeakDetection import PeakDetection
+import analytics.stocks_analysis.PeakDetection
+import matplotlib.pyplot as plt
 
 def main(filename):
     df = pd.read_csv(f"data/stocks_data/{filename}.csv")
@@ -11,12 +12,32 @@ def main(filename):
     # # 创建新列来存储五日均线和十日均线
     df['5日均线'] = ta.SMA(df['close'], timeperiod=5)
     df['10日均线'] = ta.SMA(df['close'], timeperiod=10)
+    plt.rcParams['font.sans-serif'] = 'SimHei'  # 指定中文字体，如宋体或黑体
+    plt.figure(figsize=(16, 8))
+    data = df[-200:]
+    plt.title(f'{filename}-均线图')
+    data['close'].plot(legend=True)
+    data['5日均线'].plot(legend=True)
+    data['10日均线'].plot(legend=True)
+    plt.savefig(f"Visualization/股票数据可视化图表/{filename}-均线图.png")
+
+    plt.title(f'{filename}-交易量')
+    data['volume'].plot(legend=True)  # 交易量与股价走势 相关性
+    plt.savefig(f"Visualization/股票数据可视化图表/{filename}-交易量.png")
 
     # # 假设您已经有了一个名为df的DataFrame对象，其中包含日期（在df.index中）和收盘价（在df['close']中）
     # # 创建新列来存储涨跌幅度
     # df = df.tail(100)
     df['涨幅'] = (df['close'] - df['close'].shift(5)) / df['close'].shift(5)
     df['跌幅'] = (df['close'].shift(5) - df['close']) / df['close'].shift(5)
+    plt.figure(figsize=(16, 8))
+    plt.title(f'{filename}-涨幅')
+    # 添加0基准线
+    plt.axhline(0, color='red', linestyle='--')
+    data = df[-200:]
+    data['涨幅'].plot(legend=True)  # 交易量与股价走势 相关性
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.savefig(f"Visualization/股票数据可视化图表/{filename}-涨幅.png")
 
     # 假设您已经有了一个名为df的DataFrame对象，其中包含日期（在df.index中）和收盘价（在df['close']中）
     # 相对强弱指标RSI基本原理： 
@@ -38,6 +59,11 @@ def main(filename):
         # RSI的取值范围通常在0到100之间。
         # 通过计算RSI指标，可以判断价格走势的强弱程度。一般来说，RSI值高于70表示市场超买，可能出现价格下跌的反转信号；RSI值低于30表示市场超卖，可能出现价格上涨的反转信号。同时，还可以观察RSI值的变化趋势，例如RSI值的背离现象等，来辅助判断价格走势的变化。
     df['RSI'] = ta.RSI(df['close'], timeperiod=14)
+    plt.title(f'{filename}-RSI')
+    plt.figure(figsize=(16, 8))
+    data = df[-200:]
+    data['RSI'].plot(legend=True)
+    plt.savefig(f"Visualization/股票数据可视化图表/{filename}-RSI.png")
 
     # 计算MACD指标
         # 计算MACD线：
@@ -75,6 +101,26 @@ def main(filename):
     df['MACD'] = macd
     df['MACD_Signal'] = macdsignal
     df['MACD_Histogram'] = macdhist
+    # MACD指标
+    data = df[-200:]
+    # 创建图形对象和子图对象
+    fig, ax = plt.subplots(figsize=(16, 6))
+    # 绘制MACD线
+    ax.plot(data.index, data['MACD'], label='macd（对应diff）')
+    # 绘制信号线
+    ax.plot(data.index, data['MACD_Signal'], label='macdsignal（对应dea）')
+    # 绘制柱状图
+    ax.bar(data.index, data['MACD_Histogram'], label='macdhist（对应macd）', color='gray')
+    # 设置图表标题和轴标签
+    ax.set_title('MACD', fontsize=14)
+    ax.set_xticklabels(df.index, rotation=90)
+    ax.set_xlabel('Date', fontsize=10)
+    ax.set_ylabel('MACD', fontsize=12)
+    # 设置图例
+    ax.legend()
+    # 自动调整日期显示格式
+    fig.autofmt_xdate()
+    plt.savefig(f"Visualization/股票数据可视化图表/{filename}-MACD.png")
 
     # 保存到文件
     clean_filename = f'{filename}_clean'
@@ -84,14 +130,9 @@ def main(filename):
 
 
 if __name__ == '__main__':
-    f = open('target', 'r', encoding='utf-8')
-    stock_name = f.read().split('\n')
-    print(stock_name)
-    for s in stock_name:
-        stock = s.split('（')[0]
-        print(stock)
-        clean_filename = main(stock)
-        P = PeakDetection(clean_filename)
+    stock = '邯郸钢铁'
+    clean_filename = main(stock)
+    analytics.PeakDetection.PeakDetection(clean_filename)
 
 
 '''
