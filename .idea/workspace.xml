@@ -20,69 +20,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71cf0c7d-b56a-4989-8c5f-75650388d5c3" name="变更" comment="数据处理更新">
-      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/北方股份预测.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/华能国际预测.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/武钢股份预测.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/邯郸钢铁预测.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/北方股份-MACD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/北方股份-RSI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/北方股份-交易量.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/北方股份-均线图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/北方股份-涨幅.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/北方股份.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/华能国际-MACD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/华能国际-RSI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/华能国际-交易量.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/华能国际-均线图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/华能国际-涨幅.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/华能国际.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/武钢股份-MACD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/武钢股份-RSI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/武钢股份-交易量.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/武钢股份-均线图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/武钢股份-涨幅.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/武钢股份.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-MACD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-RSI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-交易量.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-均线图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-涨幅.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/ST东北高.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/ST东北高_clean.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/北方股份.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/北方股份_clean.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/华能国际.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/华能国际_clean.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/武钢股份.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/武钢股份_clean.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/邯郸钢铁.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/邯郸钢铁_clean.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/齐鲁石化.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/stocks_data/齐鲁石化_clean.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_train/UIpredict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockcode/shA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockcode/shB.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockcode/szA.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockcode/szB.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/上海机场预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/冠城大通预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/包钢股份预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/深纺织B预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/退市华业预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/闽灿坤B预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/模型预测图表/鲁抗医药预测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/上海机场-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/上海机场-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/上海机场-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/上海机场-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/上海机场.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/冠城大通-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/冠城大通-RSI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/冠城大通-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/冠城大通-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/冠城大通-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/冠城大通.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/包钢股份-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/包钢股份-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/包钢股份-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/包钢股份-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/包钢股份.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/深纺织B-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/深纺织B-RSI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/深纺织B-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/深纺织B-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/深纺织B-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/深纺织B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/退市华业-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/退市华业-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/退市华业-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/退市华业-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/退市华业.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/闽灿坤B-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/闽灿坤B-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/闽灿坤B-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/闽灿坤B-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/闽灿坤B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/鲁抗医药-MACD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/鲁抗医药-RSI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/鲁抗医药-交易量.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/鲁抗医药-均线图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/鲁抗医药-涨幅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/鲁抗医药.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/上海机场.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/上海机场_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/冠城大通.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/冠城大通_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/包钢股份.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/包钢股份_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/深纺织B.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/深纺织B_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/退市华业.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/退市华业_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/闽灿坤B.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/闽灿坤B_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/鲁抗医药.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/stocks_data/鲁抗医药_clean.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/模型预测图表/邯郸钢铁预测.png" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/模型预测图表/邯郸钢铁预测.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-MACD.png" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-MACD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-交易量.png" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/股票数据可视化图表/邯郸钢铁-交易量.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analytics/stocks_analysis/data_clearn.py" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/stocks_analysis/data_clearn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stocks_data/海康威视.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stocks_data/海康威视_clean.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stocks_data/海康威视_clean_MaxMin.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_collection/stocks_collection/getFromTushare.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_collection/stocks_collection/getFromTushare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_collection/stocks_collection/getJson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_collection/stocks_collection/沪A.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_collection/stocks_collection/沪B.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_collection/stocks_collection/深A.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_collection/stocks_collection/深B.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/index1.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/index1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/index2.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/index2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/index3.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/index3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_train/单论训练LSTM模型构建.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_train/单轮训练LSTM模型构建.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_train/反复训练LSTM预测股票模型.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_train/反复训练LSTM预测股票模型.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,9 +123,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programs\2023-june-practical-training\models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\2023-june-practical-training\model_train" />
     </key>
@@ -248,9 +254,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.index1" />
+        <item itemvalue="Python.data_clearn" />
         <item itemvalue="Python.index3" />
         <item itemvalue="Python.index2" />
-        <item itemvalue="Python.data_clearn" />
         <item itemvalue="Python.example" />
       </list>
     </recent_temporary>
@@ -275,7 +281,13 @@
       <workItem from="1686878176670" duration="981000" />
       <workItem from="1686879644167" duration="3195000" />
       <workItem from="1687006690729" duration="1339000" />
-      <workItem from="1687045489659" duration="26319000" />
+      <workItem from="1687045489659" duration="26574000" />
+      <workItem from="1687137382177" duration="13079000" />
+      <workItem from="1687220883803" duration="4517000" />
+      <workItem from="1687230783613" duration="1209000" />
+      <workItem from="1687252422868" duration="2609000" />
+      <workItem from="1687259463844" duration="2866000" />
+      <workItem from="1687307397054" duration="1486000" />
     </task>
     <task id="LOCAL-00001" summary="数据处理更新">
       <created>1686712522442</created>
@@ -284,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686712522442</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GUI finish">
+      <created>1687076057180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687076057180</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,53 +324,58 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="数据处理更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据处理更新" />
+    <MESSAGE value="GUI finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI finish" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="170" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1687069667076">
+    <state x="170" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1687170557089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="170" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1687069667076" />
-    <state width="1877" height="381" key="GridCell.Tab.0.bottom" timestamp="1687075685005">
+    <state x="170" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1687170557089" />
+    <state width="1877" height="265" key="GridCell.Tab.0.bottom" timestamp="1687262816767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1687075685005" />
-    <state width="1877" height="381" key="GridCell.Tab.0.center" timestamp="1687075685005">
+    <state width="1877" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1687262816767" />
+    <state width="1877" height="265" key="GridCell.Tab.0.center" timestamp="1687262816767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="381" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1687075685005" />
-    <state width="1877" height="381" key="GridCell.Tab.0.left" timestamp="1687075685005">
+    <state width="1877" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1687262816767" />
+    <state width="1877" height="265" key="GridCell.Tab.0.left" timestamp="1687262816767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="381" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1687075685005" />
-    <state width="1877" height="381" key="GridCell.Tab.0.right" timestamp="1687075685005">
+    <state width="1877" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1687262816767" />
+    <state width="1877" height="265" key="GridCell.Tab.0.right" timestamp="1687262816767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="381" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1687075685005" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1687046611413">
+    <state width="1877" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1687262816767" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1687076205747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1687046611413" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1687046611413">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1687076205747" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1687076205747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1687046611413" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1687046611413">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1687076205747" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1687076205747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1687046611413" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1687046611413">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1687076205747" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1687076205747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1687046611413" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1687076205747" />
     <state x="749" y="221" key="RollbackChangesDialog" timestamp="1687067625597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="749" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1687067625597" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1687067149682">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1687225935108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1687067149682" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1687225935108" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1687076072557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1687076072557" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LSTM_py$getJson.coverage" NAME="getJson Coverage Results" MODIFIED="1687054221823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_collection/stocks_collection" />
@@ -360,9 +384,9 @@
     <SUITE FILE_PATH="coverage/newgui_py$getJson.coverage" NAME="getJson 覆盖结果" MODIFIED="1686885281075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LSTM_py$example.coverage" NAME="example Coverage Results" MODIFIED="1687060861163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/newgui_py$newgui.coverage" NAME="newgui 覆盖结果" MODIFIED="1686877500655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LSTM_py$data_clearn.coverage" NAME="data_clearn Coverage Results" MODIFIED="1687068452544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LSTM_py$data_clearn.coverage" NAME="data_clearn Coverage Results" MODIFIED="1687260330722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2023_june_practical_training$content.coverage" NAME="先读取合并content 覆盖结果" MODIFIED="1686710407004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LSTM_py$index1.coverage" NAME="index1 Coverage Results" MODIFIED="1687075684999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LSTM_py$index1.coverage" NAME="index1 Coverage Results" MODIFIED="1687309793612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LSTM_py$index3.coverage" NAME="index3 Coverage Results" MODIFIED="1687069669131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/newgui_py$UI.coverage" NAME="UI运行脚本 覆盖结果" MODIFIED="1686879481628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2023_june_practical_training$report_analysis.coverage" NAME="report_analysis 覆盖结果" MODIFIED="1686707221438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

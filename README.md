@@ -8,7 +8,7 @@
 3. 手动部分：股票选择，股票买卖（项目补充部分）
 
 ## 数据源
-网页爬取，财经库
+新浪财经，Tushare财经库
 
 ## 技术需求
 Python基础，python分析（pandas，numpy），可视化（matplotlib），机器学习（sklearn）
@@ -51,7 +51,7 @@ Python基础，python分析（pandas，numpy），可视化（matplotlib），�
 1. 数据获取
 
    1. 股票数据
-   2. 股票新闻数据
+   2. 股票新闻研究报告数据
 
 2. 数据分析
 
@@ -72,13 +72,6 @@ Python基础，python分析（pandas，numpy），可视化（matplotlib），�
    4. 模型调优（参数调优、模型替换等）
       1. 提供模型测试分数，挑出各项数据得分较高的模型
 
-
-## 补充项目
-
-网络编程：要求实现客户端与服务器交互
-页面设计：终端界面设计（手机端或电脑端、服务器端）
-项目架构：C/S
-
  ## 案例样本
 
 ### 网页样本数据
@@ -92,13 +85,9 @@ Python基础，python分析（pandas，numpy），可视化（matplotlib），�
 
 [农业银行 2.85 (1.06%) (601288)_个股行情_网易财经 (163.com)](http://quotes.money.163.com/trade/cjmx_601288.html)
 
- 
-
 ### Python基础
 
 [Python基础教程，Python入门教程（非常详细） (biancheng.net)](http://c.biancheng.net/python/)
-
-
 
 ### 机器学习
 
